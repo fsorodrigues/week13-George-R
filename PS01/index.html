@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Incorporate Final Project</title>
+
+    <link rel="stylesheet" type="text/css" href="./libraries/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <!-- Bootstrap JS is a JS library with pre-made functionality. Requires jQuery and popper.js to run.
+         JQuery is a very powerful, general-purpose library that can manipulate the DOM
+         Popper is a new positioning library for tooltips. It was annoying to integrate locally, so using a web link here.-->
+    <script src="./libraries/jquery-3.2.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="./libraries/bootstrap.js"></script>
+    <script src="./libraries/d3.v4.2.6.min.js"></script>
+
+    <!-- <style>
+
+    .container-fluid { background-color: #ccffcc; }
+    </style> -->
+
+</head>
+
+
+<body>
+
+
+
+    <br>
+
+
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12 title">
+      <h2> A League of Home Runs and Singles </h1>
+			<div class="row">
+				<div class="col-md-4" id = "chart" >
+            <svg width = "450" height = "600" id = "svg2">
+ <path d="M 165 470 q 250 -220 0 -440" stroke="blue" stroke-width="3" fill="none" />
+<line x1="20" y1="30" x2="165" y2="30" stroke="blue" stroke-width="3" fill="none" />
+<line x1="20" y1="190" x2="185" y2="190" stroke="blue" stroke-width="3" fill="none" />
+<line x1="20" y1="470" x2="165" y2="470" stroke="blue" stroke-width="3" fill="none" />
+<line x1="20" y1="310" x2="185" y2="310" stroke="blue" stroke-width="3" fill="none" />
+<line x1="185" y1="190" x2="185" y2="310" stroke="blue" stroke-width="3" fill="none" />
+            </svg>
+				</div>
+				<div class="col-md-8 text">
+          <h4> by George Redak </h4>
+          <p> Like many great NBA stories, this one begins with Chuck, Sir. Charles Barkley. Back in 2015, when Steph Curry
+            exploded onto the scene with a never-ending barrage of 3-point shots (that is actually still going on).
+            In an interview with Rusty Simmons of the San Francisco Cronicle he echoed a statement he made on his TNT show:  </p>
+
+          <p> “They’ve (the Warriors) had a terrific season. But I don’t like jump-shooting teams. I don’t think you can make enough jumpers to win four series in a row. I’ve said that for 25 years, not just now. I think you physically manhandle them inside.” </p>
+          <p> Fast-forward to today, and that same jump-shooting team has won 2 NBA Championships, have set the record for most regular-season wins and tied an NBA playoff record by going 16-1 during the 2017 post-season. It is not a stretch to say that Barkley was wrong, but it is also not necessarily correct.  </p>
+          <p>For anyone who remembers the style of basketball being played in the 90’s, Barkley’s point made sense. The Michael Jordan led Bulls attempted roughly 12 three-point shots per game during the 1998 regular season (compare that to Steph Curry who alone attempted 10 three-point shots per game in 2016-2017 season). This may be a giant difference in the way basketball is being played, but there is a surprising commonality between these two juggernaut teams. The Bulls depended on jump shots to win, ranking in the bottom half of the league when it came to points in the paint. Considering the relatively low amount of shots taken from beyond the arc, it becomes obvious that the mid-range jumper was the tool used by Jordan and company, much like the 3-point shot is to the Golden State Warriors.  </p>
+          <p> But this analysis focuses as much on the jump shots as it does on layups and dunks. There is an undeniable link between teams who are successful from beyond the arc and their ability to generate easy layups, dunks, and by extension free throw shots. And this is where Sir Charles analysis that jump shots are not enough is completely relevant. </p>
+          <p>Jump shooting success translates into what NBA savants and coaches call “keeping the defense honest”. This means that a player’s ability to knock down open jump shots has a direct correlation to his ability to drive to the net. A good shooter demands a switch on any pick and roll, it demands a defender taking one step closer to the offensive player, it demands, in the case of Curry, or Harden, flawless defensive schemes. The slightest error and the result is an uncontested 3-point shot or a strong drive to the basket that puts even more pressure on the defense, causing it to collapse and further open shooters on the wings.  </p>
+          <p> The 2015-2016 NBA season marked the beginning of a change in the way basketball must be played to win. It is not a coincidence that teams who want to compete in the playoffs take over 40% of their shots from beyond the arc. It is also not a coincidence that more than 40% of the remaining shots come from inside the paint, and most likely from underneath the basket. The two types of shots work in tandem. </p>
+          <p> Mid-range jumpers, the bread and butter of the greatest of all time, have become a liability. They do not stretch the floor, and they allow for much easier double teams. Spreading the floor with the perceived threat of a 3-pointer going in, and suddenly, the mid-range zones become lanes for aggressive, strong attacks to the rim. Just look at Russel Westbrook, Kyrie Irving, and Kevin Durant. Not only are they some of the greatest to every play the game, but their skill set allows them to make deep runs into the playoffs, and most importantly get a shot at winning the Larry O’Bryan Trophy.  </p>
+          <p> But there is one solution to this, and that comes in the form of Kawahi Leonard. And that is the next analysis. What kind of defense stops this? Leonard and the Spurs showed that flawless switching can lead to elite perimeter defense, so long as there are two 6 foot 8 players with wingspans of seven feet guarding the pick and roll. How does a team get these guys? No one but the Spurs organization truly knows the answer to that question. </p>
+
+        </div>
+			</div>
+			<div class="row">
+				<div class="col-md-8">
+            <svg width = "900" height = "200" id = "svg1"></svg>
+					<div class="row">
+						<div class="col-md-12">
+              <div class="menu-container"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+            <svg width = "500" height = "250" id = "svg3"></svg>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+<script src="./chart.js"></script>
+<script src="./index.js"></script>
+<script src="./scatter.js"></script>
+
+
+
+
+</html>
